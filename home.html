@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diamond Garden Residence</title>
+    <script type="text/javascript">
+        function message() {
+            alert("Halo, Welcome To Diamond Garden Residence")
+        }
+        function myfunction() {
+            alert("Terima Kasih Telah Mengisi Form Registrasi Kami, Admin kami akan menghubungi anda segera")
+        }
+    </script>
+</head>
+
+<body onload="message()" bgcolor="#deeaf0">
+    <center><img src="logo1.JPEG"></center>
+    <br>
+    <center><img src="img1.JPEG"></center>
+
+    <br>
+
+    <center>
+        <p><b>Diamond Garden Residence</b> adalah hunian eksklusif dengan berbagai macam fasilitas yang
+            mengusung konsep lingkungan bernuansa resort hijau alami yang dikembangkan secara modern. Kehidupan
+            harmoni yang menyatu dengan alam yang sejuk dan hijau ditengah kota Cibinong, Bogor.
+        </p>
+    </center>
+
+    <br>
+    <center><img src="img2.JPEG"></center>
+
+    <center>
+        <p>
+        <h2>Type Cendana 36/84</h2>
+        </p>
+    </center>
+    <center>
+        <p>Unit ini merupakan hunian mungil dengan desain eksklusif yang di bangun dengan bata merah di tanah
+            seluas 84m.</p>
+    </center>
+
+    <br>
+    <center><button type="button"><a href="cendana.php">LIHAT RUMAH</a></button></center>
+
+    <br>
+
+    <center><img src="img4.JPEG"></center>
+    <center>
+        <p>
+        <h2>Type Alamanda 45/98</h2>
+        </p>
+    </center>
+    <center>
+        <p>Unit ini merupakan hunian yang cukup lega dengan desain eksklusif yang di bangun dengan bata merah di
+            tanah seluas 98m.
+        </p>
+    </center>
+
+    <br>
+    <center><button type="button"><a href="alamanda.php">LIHAT RUMAH</a></button></center>
+
+    <br>
+
+    <center><img src="img6.JPEG"></center>
+    <center>
+        <p>
+        <h2>Type Aphylia 60/120</h2>
+        </p>
+    </center>
+    <center>
+        <p>Unit ini merupakan hunian yang sangat lega dengan desain eksklusif yang di bangun dengan bata merah
+            di tanah seluas 120m.
+        </p>
+    </center>
+
+    <br>
+    <center><button type="button"><a href="aphylia.php">LIHAT RUMAH </a></button></center>
+
+    <br>
+
+    <ul>
+        Inilah mengapa Diamond Garden Residence merupakan pilihan tepat bagi anda dan keluarga:
+        <li>Dibangun oleh pengembang terpercaya dan berpengalaman (PT. Graha Kristal Propertindo).</li>
+        <li>Mengusung konsep minimalis modern dengan nuansa yang asri.</li>
+        <li>Akses jalan cukup lebar (Memadai untuk Kenyamanan Akses Menuju Hunian).</li>
+        <li>ROW Boulevard 12M | ROW perumahan sampai 7M.</li>
+        <li>Akses Mudah dan dekat via Tol Jagorawi.</li>
+        <li>Dekat dengan pusat perbelanjaan Cibinong City Mall, Pasar Cibinong, ITC, Superindo, dan Carefur.</li>
+        <li>Akses mudah ke sekolah negeri dan favorit, serta pusat pemerintahan PEMDA Cibinong.</li>
+        <li>Dekat dengan Rumah Sakit Bina Husada (500M), Bank, pusat bisnis – niaga.</li>
+        <li>Dekat dengan Terminal dan Stasiun Cibinong.</li>
+        <li>Angkutan umum 24 jam, Trans Jabotabek, Damri Bandara.</li>
+    </ul>
+
+    <br>
+
+    <ul>
+        Fasilitas dalam Kawasan:
+        <li>Masjid</li>
+        <li>Kolam Renang</li>
+        <li>Lapangan Futsal</li>
+        <li>Lapangan Basket</li>
+        <li>Ruko</li>
+        <li>Play Ground/Taman Bermain terbuka</li>
+        <li>One Gate Security, dan CCTV 24 jam</li>
+        <li>PDAM, Telepon, dan Internet Fiber Optik</li>
+        <li>Pemancing Umum</li>
+        <li>Food Court</li>
+    </ul>
+    <form action="output.php" method="POST" enctype="multipart/form-data">
+        <table>
+            <tr>
+                <th>
+                    <h2>Form Registrasi Calon Pembeli</h2>
+                </th>
+            <tr>
+                <td>Isi Data Dibawah ini </td>
+            </tr>
+            <tr>
+                <td>Nama</td>
+                <td>:</td>
+                <td><input type="text" name="nama" placeholder="Masukkan Nama" size="30" maxlength="30"
+                        autocompalte="off" autofocus></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td>:</td>
+                <td><input type="text" name="email" placeholder="Masukkan Email" size="30" maxlength="30"
+                        autocompalte="off" autofocus></td>
+            </tr>
+            <tr>
+                <td>No Telp</td>
+                <td>:</td>
+                <td><input type="text" name="no_telp" placeholder="Masukkan No Telp" size="30" maxlength="30"
+                        autocompalte="off" autofocus></td>
+            </tr>
+            <tr>
+                <td>Type Rumah</td>
+                <td>:</td>
+                <td>
+                    <select name="type_rumah">
+                        <option value="">Pilih Type Rumah</option>
+                        <option value="Cendana 36/84">Type Cendana 36/84</option>
+                        <option value="Alamanda 45/98">Type Alamanda 45/98</option>
+                        <option value="Aphylia 60/120">Type Aphylia 60/120</option>
+                </td>
+            </tr>
+            <br>
+            <tr>
+                <td colspan="1"><button type="reset" name="reset" value="submit">Reset</button></td>
+                <td colspan="1"><button type="submit" value="submit" onclick="myfunction()">Submit</button></td>
+            </tr>
+        </table>
+    </form>
+
+    <br>
+
+    <h3>Marketing Gallery</h3>
+    <p>Jl.Raya Mayor Oking Jaya Atmaja,Ciriung,Cibinong,Bogor,Jawa Barat 16918.</p>
+    <p>Phone:+62 21 358 17799</p>
+    <p>Email:marketing@diamondgarden.com</p>
+
+    <a href="index.html">Back To Home</a>
+</body>
+</html>
